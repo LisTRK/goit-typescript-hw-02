@@ -67,3 +67,4 @@ export default tseslint.config([
   },
 ])
 ```
+# goit-typescript-hw-02
