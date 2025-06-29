@@ -12,7 +12,7 @@ interface fetchImagesResponse{
 }
 
 export async function fetchImages(query: string, page: number): Promise<fetchImagesResponse> {
-  const response = await axios(BASE_URL + "search/photos/", {
+  const response = await axios.get<fetchImagesResponse>(BASE_URL + "search/photos/", {
     params: { client_id: KEY_ID, query: query, page: page },
   });
   return response.data;

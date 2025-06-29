@@ -1,7 +1,7 @@
 interface LoadMoreBtnProps{
   onClick: ()=> void;
 }
-export default function LoadMoreBtn({ onClick }: LoadMoreBtnProps): JSX.Element {
+export default function LoadMoreBtn({ onClick }: LoadMoreBtnProps) {
   const onChange = () => {
     onClick();
   };
